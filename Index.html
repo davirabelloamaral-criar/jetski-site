@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aluguel de Jetski</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0077b6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #023e8a;
+    }
+
+    .contato {
+      background: #03045e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .destaque {
+      color: #d00000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏄‍♂️ Aluguel de Jetski</h1>
+  <p>Venha viver essa experiência incrível!</p>
+</header>
+
+<div class="container">
+
+  <!-- GTX 230 -->
+  <div class="card">
+    <h2>Sea-Doo GTX 230 (2024)</h2>
+    <p>😎 Explore as belezas da ilha com conforto e potência!</p>
+
+    <h3>💰 Valores:</h3>
+    <ul>
+      <li>2 horas - R$ 700</li>
+      <li>3 horas - R$ 850</li>
+      <li>4 horas - R$ 1000</li>
+      <li>Diária - R$ 1500</li>
+    </ul>
+
+    <p>⏰ Horário: 9:00 às 17:30</p>
+    <p class="destaque">⛽ Pega com tanque cheio e devolve com tanque cheio</p>
+    <p>🎵 Com caixa de som</p>
+    <p>👥 1 passageiro permitido</p>
+    <p>⚠️ Uso obrigatório de colete (incluso)</p>
+    <p>📄 Necessário habilitação de motonauta</p>
+
+    <button onclick="reservar('GTX 230')">Reservar</button>
+  </div>
+
+  <!-- GTI 170 -->
+  <div class="card">
+    <h2>Sea-Doo GTI 170</h2>
+    <p>😎 Ideal para passeio com conforto e som!</p>
+
+    <h3>💰 Valores:</h3>
+    <ul>
+      <li>2 horas - R$ 600</li>
+      <li>3 horas - R$ 750</li>
+      <li>4 horas - R$ 900</li>
+      <li>Diária - R$ 1500</li>
+    </ul>
+
+    <p>⏰ Horário: 9:00 às 17:30</p>
+    <p class="destaque">⛽ Pega com tanque cheio e devolve com tanque cheio</p>
+    <p>🎵 Com som</p>
+    <p>👥 1 passageiro permitido</p>
+    <p>⚠️ Colete obrigatório (incluso)</p>
+    <p>📄 Habilitação obrigatória</p>
+
+    <button onclick="reservar('GTI 170')">Reservar</button>
+  </div>
+
+  <!-- VX -->
+  <div class="card">
+    <h2>Yamaha VX 1300</h2>
+    <p>😎 Ótima opção custo-benefício!</p>
+
+    <h3>💰 Valores:</h3>
+    <ul>
+      <li>2 horas - R$ 500</li>
+      <li>3 horas - R$ 600</li>
+      <li>4 horas - R$ 750</li>
+      <li>Diária - R$ 1000</li>
+    </ul>
+
+    <p>⏰ Horário: 9:00 às 17:30</p>
+    <p class="destaque">⛽ Pega com tanque cheio e devolve com tanque cheio</p>
+    <p>👥 1 passageiro permitido</p>
+    <p>⚠️ Colete obrigatório (incluso)</p>
+    <p>📄 Habilitação obrigatória</p>
+
+    <button onclick="reservar('VX 1300')">Reservar</button>
+  </div>
+
+</div>
+
+<div class="contato">
+  <h2>📍 Local</h2>
+  <p>Marina Milgarden</p>
+  <p>Rua Thereza Zanoni Caser, 195</p>
+  <p>Pontal de Camburi - Vitória ES</p>
+
+  <h2>📲 Contato</h2>
+  <p>WhatsApp: (27) 99254-0220</p>
+  <p>Pix: 27992540220</p>
+</div>
+
+<script>
+  function reservar(modelo) {
+    window.open("https://wa.me/5527992540220?text=Quero alugar o jetski " + modelo);
+  }
+</script>
+
+</body>
+</html>
